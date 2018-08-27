@@ -10,6 +10,6 @@
  $queryUpdate = $link->query("update tb_clientes set nome='$nome', email='$email', telefone='$telefone' where id='$id'");
 
  $affected_rows = mysqli_affected_rows($link);
- if(affected_rows > 0):
+ if($affected_rows > 0):
  	header("Location:../consultas.php");
  endif;
